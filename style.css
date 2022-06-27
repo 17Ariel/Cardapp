@@ -1,0 +1,72 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.container{
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.bg-light{
+	background: #fff;
+}
+.card{
+	height: 400px;
+	width: 400px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+.card-light{
+	background-color: #fff;
+}
+img{
+	height: 200px;
+	width: 200px;
+	border-radius: 100%;
+}
+h2,p{
+	margin: 14px 4px 14px 4px;
+	text-align: center;
+}
+p{
+	font-weight: 600;
+	margin: 0 6px 0 6px;
+}
+.button-group{
+	margin: 16px 0 16px 0;
+}
+.btn{
+	border: none;
+	font-family: 600;
+	outline: none;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+	padding: 10px 20px;
+	border-radius: 4px;
+	cursor: pointer;
+}
+.btn-light{
+	background: #fff;
+	border: 1px solid #fff;
+}
+.btn-dark{
+	background: #333;
+	color: #fff;
+	border: 1px solid #333;
+}
+.btn-dark:focus{
+	outline: #303841 solid 2px;
+	border-radius: 4px;
+}
+.btn-light:focus{
+	outline: #ebedef solid 2px;
+	border-radius: 4px;
+}
+

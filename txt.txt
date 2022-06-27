@@ -1,0 +1,72 @@
+// const setTheme= localStorage.getItem('theme');
+// console.log('theme',setTheme);
+// if(setTheme==null){
+// 	changeBg('container');
+// }else{
+// 	changeBg(setTheme);
+// }
+
+// function changeBg(bg_class)
+// {
+// 	document.getElementsByClassName(container).style=bg_class;
+// 	localStorage.setItem('theme', bg_class);
+// }
+
+const light=document.getElementsByClassName('btn-light')[0];
+const dark=document.getElementsByClassName('btn-dark')[0];
+const container=document.getElementsByClassName('container')[0];
+// const card=document.getElementsByClassName('card')[0];
+
+light.addEventListener('click',()=>{
+	container.classList.remove('bg-dark');
+	container.classList.add('bg-light');
+	localStorage.removeItem('theme');
+
+});
+dark.addEventListener('click',()=>{
+	let darktheme=container.style.backgroundColor='#333';
+	localStorage.setItem('theme',darktheme);
+	localStorage.getItem('theme');
+});
+
+window.addEventListener('load',()=>{
+	if(localStorage.getItem('theme')===darktheme){
+		
+	}
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// light.addEventListener('click',()=>{
+// 	// localStorage.removeItem('container_theme');
+// 	// localStorage.removeItem('card_theme');
+// 	container.classList.remove('bg-dark');
+// 	// card.classList.remove('card-dark');
+// 	container.classList.add('bg-light');
+// 	// card.classList.add('card-light');
+// });
+
+// dark.addEventListener('click',()=>{
+// 	container.classList.add('bg-dark');
+// 	// card.classList.add('card-dark');
+// 	localStorage.setItem('bgColor',container.classList.contains('bg-dark'));
+// 	localStorage.setItem('cardColor',container.classList.contains('card-dark'));
+// 	if(localStorage.getItem('bgColor')==='bg-dark'){
+// 		container.classList.add('bg-dark');
+// 		// card.classList.add('card-dark');
+// 	}
+// });
+
+
